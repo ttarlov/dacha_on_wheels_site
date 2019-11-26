@@ -37,7 +37,7 @@ h1 {
 }
 
 img {
-  height: 350px;
+  height: 775px;
   border-radius: 5px;
 }
 
@@ -157,7 +157,7 @@ opacity: 0.5;
   /* border-style: solid; */
 }
 
-@media (min-width: 700px)  {
+@media (min-width: 1000px)  {
 
   .wrapper {
     grid-template-areas:
