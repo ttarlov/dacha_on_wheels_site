@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.wrapper {
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(#00A2FF,#002D5A);
+    grid-gap: 1em;
+    grid-template-colums: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto 1fr 1fr auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main_photo"
+      "the_crew"
+      "taras"
+      "laura"
+      "mish"
+      "macy"
+      "insta"
+      "footer"
+
+}
+
+html,body {
+  width: 100%;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color:  #FFFFFF;
+  text-align: center;
+}
+
+img {
+  height: 350px;
+  border-radius: 5px;
+}
+
+.header {
+  grid-area: header;
+  /* border-style: solid; */
+  padding: 20px;
+  color:  #FFFFFF;
+  background-color:;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 36px;
+  letter-spacing: .17em;
+  margin-left: 60px;
+}
+
+.nav {
+  grid-area: nav;
+  /* border-style: solid; */
+  text-align: center;
+  padding: 20px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav li button {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #009FFC;
+}
+
+button {
+color: #FFFFFF;
+background-color: none;
+border: none;
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height:32px;
+font-size:17px;
+transition: all 0.2s ease-in-out;
+opacity: 1;
+}
+
+button:hover {
+opacity: 0.5;
+}
+
+
+.main_photo {
+  grid-area: main_photo;
+  /* border-style: solid; */
+}
+
+.main_photo img {
+  width: 100%;
+  height: auto;
+}
+
+.the_crew {
+  grid-area: the_crew;
+  /* border-style: solid; */
+}
+
+.taras{
+  grid-area: taras;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+.laura{
+  grid-area: laura;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+.mish{
+  grid-area: mish;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+.macy {
+  grid-area: macy;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+.crew_photo {
+  transition: all .5s ease-in-out;
+}
+
+.crew_photo:hover {
+  transform: scale(1.1);
+}
+
+.insta {
+  grid-area: insta;
+  /* border-style: solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  /* border-style: solid; */
+}
+
+
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+  display: grid;
+  /* border-style: solid; */
+}
+
+@media (min-width: 700px)  {
+
+  .wrapper {
+    grid-template-areas:
+    "header header nav nav"
+      "main_photo main_photo main_photo main_photo"
+      "the_crew the_crew the_crew the_crew"
+      "taras laura mish macy"
+      "insta insta insta insta"
+      "footer footer footer footer";
+    }
+}
